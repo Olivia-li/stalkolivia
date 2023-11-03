@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react"
 import { MapContainer, TileLayer, Marker, GeoJSON, Popup } from "react-leaflet"
-import L, { Icon, LatLngExpression, marker } from "leaflet"
+import L, { DivIcon, Icon, IconOptions, LatLngExpression } from "leaflet"
 import "leaflet/dist/leaflet.css"
 
 const LocationMap = () => {
@@ -10,7 +10,7 @@ const LocationMap = () => {
   const [marathonRoute, setMarathonRoute] = useState(null)
   const [lastUpdated, setLastUpdated] = useState<string | undefined>(undefined)
   const markerRef = useRef<any>(null)
-  const [minimalMarkerIcon, setMinimalMarkerIcon] = useState<Icon | null>(null)
+  const [minimalMarkerIcon, setMinimalMarkerIcon] = useState<Icon<IconOptions> | DivIcon | undefined >(undefined)
 
   useEffect(() => {
     const icon = new L.Icon({

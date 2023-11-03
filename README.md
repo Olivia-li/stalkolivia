@@ -1,5 +1,7 @@
 # Marathon Tracker
 
+<img width="1101" alt="image" src="https://github.com/Olivia-li/stalkolivia/assets/9896624/e1b69242-9b1b-4368-bf4a-2bb49eecba6e">
+
 Marathon Tracker is a project that facilitates real-time tracking of a runner's position during the TCS New York City Marathon 2023 using Apple's AirTag technology. The project is divided into two main components: a server-side component that examines cache files from the Find My app to obtain AirTag location data, and a client-side application that presents the marathon route along with the runner's current location on a map.
 
 ## Features
